@@ -1,0 +1,62 @@
+/*
+ * floating point arithmetic
+ * c++
+ * cmake
+ * algorithms
+ * data structures
+ * awk
+ * sed
+ * ed
+ * grep
+ * cut
+ * xargs
+ * pstree
+ * pgrep, pkill
+ * ssh
+ */
+awk (1p) - pattern scanning and processing language
+cal (1p) - print a calendar cal (1) - display a calendar
+cat (1) - concatenate files and print on the standard output cat (1p) - concatenate and print files
+comm (1) - compare two sorted files line by line comm (1p) - select or reject lines common to two files
+cut (1) - remove sections from each line of files
+cut (1p) - cut out selected fields of each line of a file
+date (1) - print or set the system date and time date (1p) - write the date and time
+dd (1) - convert and copy a file dd (1p) - convert and copy a file
+echo (1) - display a line of text echo (1p) - write arguments to standard output echo (3x) - curses input options
+ed (1p) - edit text ed (1) - line-oriented text editor
+exec (1p) - execute commands and open, close, or copy file d... exec (3) - execute a file exec (3p) - execute a file
+file (1p) - determine file type file (1) - determine file type
+grep (1) - print lines that match patterns grep (1p) - search a file for a pattern
+head (1) - output the first part of files head (1p) - copy the first part of files __gnu_pbds::detail::pat_trie_base__CIter (3) - Const iterator.
+kill (1p) - terminate or signal processes kill (1) - terminate a process kill (2) - send signal to a process kill (3p) - send a signal to a process or a group of processes
+ls (1) - list directory contents ls (1p) - list directory contents
+nice (1) - run a program with modified scheduling priority nice (1p) - invoke a utility with an altered nice value nice (2) - change process priority nice (3p) - change the nice value of a process
+nohup (1) - run a command immune to hangups, with output to ... nohup (1p) - invoke a utility immune to hangups
+od (1) - dump files in octal and other formats od (1p) - dump files in various formats
+pgrep (1) - look up or signal processes based on name and other attributes
+pkill (1) - look up or signal processes based on name and other attributes
+pr (1) - convert text files for printing pr (1p) - print files
+ps (1p) - report process status ps (1) - report a snapshot of the current processes.
+sed (1p) - stream editor sed (1) - stream editor for filtering and transforming text
+sleep (1) - delay for a specified amount of time sleep (1p) - suspend execution for an interval sleep (3) - sleep for a specified number of seconds sleep (3p) - suspend execution for an interval of time
+sort (1) - sort lines of text files sort (1p) - sort, merge, or sequence check text files sort (3perl) - perl pragma to control sort() behaviour
+tail (1) - output the last part of files tail (1p) - copy the last part of a file
+tee (1) - read from standard input and write to standard output and files tee (1p) - duplicate standard input tee (2) - duplicating pipe content
+test (1) - check file types and compare values test (1p) - evaluate expression Test (3perl) - provides a simple framework for writing test scripts
+time (1) - time a simple command or give resource usage time (1p) - time a simple command time (2) - get time in seconds time (7) - overview of time and timers time (3am) - time functions for gawk time (3p) - get time
+tr (1) - translate or delete characters tr (1p) - translate characters
+trap (1p) - trap signals
+uniq (1) - report or omit repeated lines uniq (1p) - report or filter out repeated lines in a file
+uptime (1) - Tell how long the system has been running.
+w (1) - Show who is logged on and what they are doing.
+wc (1) - print newline, word, and byte counts for each file wc (1p) - word, line, and byte or character count
+whatis (1) - display one-line manual page descriptions
+whereis (1) - locate the binary, source, and manual page files for a command
+who (1) - show who is logged on who (1p) - display who is on the system
+whoami (1) - print effective userid
+nroff (1) - use groff to format documents for TTY devices
+troff (1) - the troff processor of the groff text formatting system
+roff (7) - concepts and history of roff typesetting
+groff (1) - front-end for the groff document formatting system
+pdfseparate (1) - Portable Document Format (PDF) page extractor
+pdfunite (1) - Portable Document Format (PDF) page merger

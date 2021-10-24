@@ -1,0 +1,203 @@
+open
+read
+write
+fsync
+fdatasync
+close
+lseek
+pread
+pwrite
+ftruncate
+truncate
+select
+pselect
+poll
+ppoll
+
+<stdio.h>
+FILE
+fopen     fclose
+fgetc     fputc
+ungetc
+fgets     fputs
+fread     fwrite
+fseek
+fsetpos   fgetpos
+rewind
+ftell
+fflush
+ferror
+feof
+clearerr
+fileno
+servbuf
+flockfile
+funlockfil
+fgetc_unlocked
+fgets_unlocked
+fread_unlocked
+fputc_unlocked
+fputs_unlocked
+fwrite_unlocked
+fflush_unlocked
+feof_unlocked
+ferror_unlocked
+fileno_unlocked
+clearerr_unlocked
+
+writev  readv
+sysconf
+mmap
+munmap
+mremap
+mprotect
+msync
+getpagesize
+
+getpid
+getppid
+execl
+execlp
+execle
+execv
+execvp
+execve
+fork    vfork(deprecated)
+exit
+atexit
+on_exit
+wait
+waitpid
+waitid
+wait3 /* BSD style
+wait4 */
+
+setuid
+setgid
+seteuid
+setegid
+setreuid /* BSD style
+setregid */
+setresuid /* HP-UX style
+setresgid */
+getuid
+getgid
+geteuid
+getegid
+setsid
+getsid
+setpgid
+getpgid
+setpgrp
+getpgrp
+
+sched_yield
+nice
+setpriority
+getpriority
+ioprio_set ioprio_get
+*
+
+pthread_t
+pthread_create
+pthread_self
+pthread_equal
+pthread_exit
+pthread_cancel
+pthread_setcancelstate
+pthread_setcanceltype
+pthread_join
+pthread_detach
+pthread_mutex_t
+pthread_mutex_lock
+pthread_mutex_unlock
+
+stat fstat lstat
+chmod fchmod
+chown lchown fchown
+getxattr lgetxattr fgetxattr
+setxattr lsetxattr fsetxattr
+listxattr llistxattr flistxattr
+removexattr lremovexattr fremovexattr
+getcwd getwd get_current_dir_name
+chdir fchdir
+mkdir
+rmdir
+opendir
+dirfd
+readdir
+closedir
+getdents
+link
+symlink
+unlink
+remove
+rename
+ioctl
+inotify_init1
+inotify_add_watch
+inotify_rm_watch
+
+malloc
+calloc
+realloc
+free
+posix_memalign valloc memalign
+mmap
+munmap
+mallopt
+malloc_usable_size
+malloc_trim
+mallinfo malloc_stats
+alloca
+strdupa strndupa
+memset bzero
+memcmp bcmp
+memmove bcopy
+memcpy memccpy
+mempcpy
+memchr memrchr
+memmem
+memfrob
+mlock munlock
+mlockall munlockall
+mincore
+
+signal
+pause
+strsignal psignal sys_siglist[] 
+kill
+raise
+killpg
+sigemptyset
+sigfillset
+sigaddset
+sigdelset
+sigismember
+sigisemptyset sigorset sigandset
+sigprocmask
+sigpending
+sigsuspend
+sigaction
+sigqueue
+
+clock_getres
+time
+gettimeofday
+clock_gettime
+times
+stime
+settimeofday
+clock_settime
+asktime asktime_r
+mktime
+ctime ctime_r
+gtime gtime_r
+localtime localtime_r
+difftime
+adjtime
+adjtimex
+sleep
+usleep
+nanosleep
+clock_nanosleep
