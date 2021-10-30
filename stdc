@@ -35,9 +35,5 @@ GUI: http://www.yolinux.com/TUTORIALS/GTK+ProgrammingTips.html , http://zetcode.
 Wordprocessing: For now, just learn to put text into a textbox in GTK+, then save the contents to a file.
 MySQL: http://zetcode.com/db/mysqlc/
 
-parentheses or "round brackets" ( )
-"square brackets" or "box brackets" [ ]
-braces or "curly brackets" { }
-"angle brackets" < >
 
 1 sec=1 000 milisec=1 000 000 microsec=1 000 000 000 nanosec
