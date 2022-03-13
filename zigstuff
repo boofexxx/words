@@ -1,0 +1,16 @@
+    for (string) |character, index| {}
+if I want to omit character and index, I need to write it like:
+    for (string) |_| {}
+cannot it be sth like
+    for (string) {} // It seems like much better for me =3
+
+defer will executed after every iteration of while
+does it really exit the statement?
+    var i: i32 = 0;
+    while (i != 5) : (i += 1) {
+        defer print("defer {}\n", .{i});
+        print("{}\n", .{i});
+    }
+
+    var n: ?i32 = foo();
+    std.debug.print("{}\n", .{n orelse 0}) // it fails
