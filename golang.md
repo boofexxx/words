@@ -23,20 +23,21 @@ Comments are very important to the readability of a Go program. Each comments sh
 * The comment should explain how the thing does what it does.
 * The comment should explain why the thing is why it is.
 
-* Comments on variables and constants should describe their contents not their purpose
-    * For variables without an initial value, the comment should describe who is responsible for initialising this variable.
+### Comments on variables and constants should describe their contents not their purpose
+* For variables without an initial value, the comment should describe who is responsible for initialising this variable.
 ```go
 // sizeCalculationDisabled indicates whether it is safe
 // to calculate Types' widths and alignments. See dowidth.
 var sizeCalculationDisabled bool
 ```
 
-    * The comment was added by the author because registry doesn’t explain enough about its purpose—​it’s a registry, but a registry of what?
+* The comment was added by the author because registry doesn’t explain enough about its purpose - it’s a registry, but a registry of what?
 ```go
 // registry of SQL drivers
 var registry = make(map[string]*sql.Driver)
 ```
-    * By renaming the variable to sqlDrivers its now clear that the purpose of this variable is to hold SQL drivers. Now the comment is redundant and can be removed.
+
+* By renaming the variable to sqlDrivers its now clear that the purpose of this variable is to hold SQL drivers. Now the comment is redundant and can be removed.
 ```go
 var sqlDrivers = make(map[string]*sql.Driver)
 ```
