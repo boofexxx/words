@@ -41,3 +41,15 @@ var registry = make(map[string]*sql.Driver)
 ```go
 var sqlDrivers = make(map[string]*sql.Driver)
 ```
+
+### Always document public symbols
+* Any public function that is not both obvious and short must be commented.
+* Any function in a library must be commented regardless of length or complexity
+* There is one exception to this rule; you don’t need to document methods that implement an interface
+
+### Don't comment bad code, rewrite it
+The tradition in the standard library is to annotate a TODO style comment with the username of the person who noticed it.
+```go
+// TODO(dfc) this is O(N^2), find a faster way to do this.
+```
+The username is not a promise that that person has committed to fixing the issue, but they may be the best person to ask when the time comes to address it. Other projects annotate TODOs with a date or an issue number.
