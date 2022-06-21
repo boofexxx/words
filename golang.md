@@ -50,6 +50,6 @@ var sqlDrivers = make(map[string]*sql.Driver)
 ### Don't comment bad code, rewrite it
 The tradition in the standard library is to annotate a TODO style comment with the username of the person who noticed it.
 ```go
-// TODO(dfc) this is O(N^2), find a faster way to do this.
+// TODO: (dfc) this is O(N^2), find a faster way to do this.
 ```
 The username is not a promise that that person has committed to fixing the issue, but they may be the best person to ask when the time comes to address it. Other projects annotate TODOs with a date or an issue number.
