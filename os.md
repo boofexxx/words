@@ -16,6 +16,21 @@ Each CPU has a specific set of instructions that it can execute. Thus an x86 pro
 In addition to the general registers used to hold variables and temporary results, most computers have sev eral special registers that are visible to the pro- grammer. One of these is the program counter, which contains the memory address of the next instruction to be fetched. After that instruction has been fetched, the program counter is updated to point to its successor
 Another register is the stack pointer, which points to the top of the current stack in memory. The stack contains one frame for each procedure that has been entered but not yet exited. A procedure’s stack frame holds those input parameters, local variables, and temporary variables that are not kept in registers.
 Yet another register is the PSW (Program Status Word). This register contains the condition code bits, which are set by comparison instructions, the CPU priority, the mode (user or kernel), and various other control bits. User programs may normally read the entire PSW but typically may write only some of its fields. The PSW plays an important role in system calls and I/O.
+* **Memory** - the second major component in any computer. Ideally, a memory should be extremely fast (faster than executing an instruction so that CPU is not held up by the memory). The memory system is constructed as a hierarchy of layers. The top layers have higher speed, smaller capacity, and greater cost per bit than the lower ones, often by a factor of a billion or more.
+The top layer consists of the registers internal to the CPU. They are made of the same material as the CPU and are thus just as fast as the CPU. Consequently, there is no delay in accessing them. The storage capacity available in them is typically 32 × 32 bits on a 32-bit CPU and 64 × 64 bits on a 64-bit CPU. Less than 1 KB in both cases. Programs must manage the registers (i.e., decide what to keep in them) themselves, in software.
+|Typical access time |Name |Typical capacity|
+|--------------------|-----|----------------|
+|1 nsec |Registers | < 1 KB|
+|2 nsec |Cache | 4 MB|
+|10 nsec |Main memory | 1-8 GB|
+|10 msec |Magnetic disk | 1-4 TB|
+* **I/O Devices** also  interact heavily with the operating system. I/O Devices generally consist of two parts: a controller and the device itself. The controller is a chip or a set of chips that physically controls the device. It accepts commands from the operating system, for example, to read data from the device, and carries them out.
+The software that talks to a controller, giving it commands and accepting responses, is called a device driver. Each controller manufacturer has to supply a driver for each operating system it supports.
+Every controller has a small number of registers that are used to communicate with it. For example, a minimal dis controller might have registers for specifying the disk address, memory address, sector count, and direction (read or write). To activate the controller, the driver gets a command from the operating syste, then translates it into the appropriate values to write into the device registers. The collection of all the device registers forms the I/O port space.
+* **Buses**
+
+## Operating System Concepts
+* Process is basically a program in execution
 
 **Abstraction** - an operating system abstraction layer provides an application programming interface to an abstract operating system making it easier and quicker to develop code for multiple software or hardware platforms
 **Arbitration** - the operating system manages access to shared hardware resources so that multiple applications can run on the same hardware at the same time without interfering with one another
